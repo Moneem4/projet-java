@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1000.0" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@img/h3.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="182.0" layoutY="93.0" prefHeight="70.0" prefWidth="665.0" text="Hospital Mangement System" textFill="#cd017f">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <JFXHamburger fx:id="menu" layoutX="14.0" layoutY="14.0" onMouseClicked="#showMenuFn" />
+      <ImageView fx:id="admin" fitHeight="150.0" fitWidth="200.0" layoutX="411.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/admin.png" />
+         </image></ImageView>
+      <Label fx:id="welcome" layoutX="219.0" layoutY="449.0" style="-fx-background-color: rgba(0, 100, 100, 0.5);" text="Welcome " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="doctor" fitHeight="150.0" fitWidth="200.0" layoutX="411.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/doc.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="nurse" fitHeight="150.0" fitWidth="200.0" layoutX="411.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/nurse.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

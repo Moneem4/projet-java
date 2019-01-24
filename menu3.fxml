@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0"
+	prefWidth="1000.0"
+	style="-fx-background-color: #FFFFFF; -fx-background-image: img\h7.jpg;"
+	xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.menuController">
+	<children>
+		<ImageView fitHeight="650.0" fitWidth="1000.0" pickOnBounds="true"
+			smooth="false">
+			<image>
+				<Image url="@img/h3.jpg" />
+			</image>
+		</ImageView>
+		<Pane prefHeight="650.0" prefWidth="1000.0"
+			style="-fx-background-color: rgba(0, 100, 100, 0.6);" />
+		<ImageView fitHeight="600.0" fitWidth="750.0" layoutX="127.0"
+			layoutY="25.0" pickOnBounds="true" smooth="false"
+			style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 50, 0, 0, 0);">
+			<image>
+				<Image url="@img/h7.jpg" />
+			</image>
+			<rotationAxis>
+				<Point3D />
+			</rotationAxis>
+		</ImageView>
+		<Pane fx:id="p1" layoutX="280.0" layoutY="143.0" onMouseClicked="#showMainFn"
+			prefHeight="100.0" prefWidth="110.0" style="-fx-background-radius: 100%;">
+			<children>
+				<ImageView fx:id="home" fitHeight="80.0" fitWidth="80.0"
+					layoutX="15.0" layoutY="8.0" onMouseClicked="#changeBG"
+					onMouseEntered="#hoverBG" onMouseExited="#exitBG" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@img/home-icon.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="41.0" layoutY="42.0" text="Home" textFill="WHITE" />
+			</children>
+		</Pane>
+		<Pane fx:id="p2" layoutX="627.0" layoutY="144.0" onMouseClicked="#NewFileFn"
+			prefHeight="100.0" prefWidth="110.0" style="-fx-background-radius: 100%;">
+			<children>
+				<ImageView fx:id="newDoc" fitHeight="80.0" fitWidth="70.0"
+					layoutX="21.0" layoutY="14.0" onMouseClicked="#changeBG"
+					onMouseEntered="#hoverBG" onMouseExited="#exitBG" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@img/newFile-icon.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="9.0" layoutY="20.0" text="New Medical File"
+					textFill="WHITE" />
+			</children>
+		</Pane>
+		<Pane fx:id="p3" layoutX="208.0" layoutY="286.0" onMouseClicked="#showMedicalFilesFn"
+			prefHeight="100.0" prefWidth="110.0" style="-fx-background-radius: 100%;">
+			<children>
+				<ImageView fx:id="docs" fitHeight="80.0" fitWidth="80.0"
+					layoutX="16.0" layoutY="7.0" onMouseClicked="#changeBG"
+					onMouseEntered="#hoverBG" onMouseExited="#exitBG" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@img/docs-icon.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="20.0" layoutY="30.0" text="Medical Files"
+					textFill="WHITE" />
+			</children>
+		</Pane>
+		<Pane fx:id="p4" layoutX="700.0" layoutY="287.0" onMouseClicked="#showDoctorsList"
+			prefHeight="100.0" prefWidth="110.0" style="-fx-background-radius: 100%;">
+			<children>
+				<Label layoutX="33.0" layoutY="6.0" text="Doctors" textFill="WHITE" />
+				<ImageView fx:id="doctors" fitHeight="80.0" fitWidth="80.0"
+					layoutX="13.0" layoutY="12.0" onMouseClicked="#changeBG"
+					onMouseEntered="#hoverBG" onMouseExited="#exitBG" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@img/work-team.png" />
+					</image>
+				</ImageView>
+			</children>
+		</Pane>
+		<JFXHamburger fx:id="returnBtn" layoutX="14.0" layoutY="14.0"
+			onMouseClicked="#showMainFn" />
+		<Pane fx:id="p5" layoutX="280.0" layoutY="429.0" onMouseClicked="#searchFn"
+			prefHeight="100.0" prefWidth="110.0" style="-fx-background-radius: 100%;">
+			<children>
+				<ImageView fx:id="search" fitHeight="80.0" fitWidth="80.0"
+					layoutX="13.0" layoutY="12.0" onMouseClicked="#changeBG"
+					onMouseEntered="#hoverBG" onMouseExited="#exitBG" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@img/search-icon.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="20.0" layoutY="30.0" text="Search" textFill="WHITE" />
+			</children>
+		</Pane>
+		<Pane fx:id="p6" layoutX="625.0" layoutY="432.0" onMouseClicked="#showMessagesFn"
+			prefHeight="100.0" prefWidth="110.0" style="-fx-background-radius: 100%;">
+			<children>
+				<ImageView fx:id="messages" fitHeight="80.0" fitWidth="80.0"
+					layoutX="17.0" layoutY="10.0" onMouseClicked="#changeBG"
+					onMouseEntered="#hoverBG" onMouseExited="#exitBG" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@img/msg-icon.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="29.0" layoutY="6.0" text="Messages" textFill="WHITE" />
+			</children>
+		</Pane>
+		<Pane fx:id="p9" layoutX="453.0" layoutY="488.0" onMouseClicked="#addChefFn"
+			prefHeight="100.0" prefWidth="110.0" style="-fx-background-radius: 100%;">
+			<children>
+				<ImageView fx:id="adChef" fitHeight="80.0" fitWidth="80.0"
+					layoutX="14.0" layoutY="10.0" onMouseClicked="#changeBG"
+					onMouseEntered="#hoverBG" onMouseExited="#exitBG" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@img/addChef.png" />
+					</image>
+				</ImageView>
+				<Label fx:id="addChefL" layoutX="15.0" layoutY="42.0" text="Add Dept Chef"
+					textFill="WHITE" />
+			</children>
+		</Pane>
+		<ImageView fx:id="icon" fitHeight="90.0" fitWidth="90.0"
+			layoutX="465.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@img/icon4.png" />
+			</image>
+		</ImageView>
+		<Pane fx:id="p8" layoutX="453.0" layoutY="81.0" onMouseClicked="#addAdminFn"
+			prefHeight="100.0" prefWidth="110.0" style="-fx-background-radius: 100%;">
+			<children>
+				<ImageView fx:id="addAdmin" fitHeight="70.0" fitWidth="70.0"
+					layoutX="20.0" layoutY="15.0" onMouseClicked="#changeBG"
+					onMouseEntered="#hoverBG" onMouseExited="#exitBG" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@img/addAdmin.png" />
+					</image>
+				</ImageView>
+				<Label fx:id="label_admin" layoutX="30.0" layoutY="42.0" text="Add Admin"
+					textFill="WHITE" />
+			</children>
+		</Pane>
+		<Pane fx:id="p7" layoutX="141.0" layoutY="541.0" onMouseClicked="#logoutFn"
+			prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 100%;">
+			<children>
+				<ImageView fx:id="logout" fitHeight="80.0" fitWidth="50.0"
+					layoutX="10.0" layoutY="11.0" onMouseClicked="#changeBG"
+					onMouseEntered="#hoverBG" onMouseExited="#exitBG" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@img/logout-icon.png" />
+					</image>
+				</ImageView>
+			</children>
+		</Pane>
+		<ImageView fx:id="icon1" fitHeight="90.0" fitWidth="90.0"
+			layoutX="463.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@img/icon4.png" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>
